@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.visible {
   color: white;
 }
+.notVisible {
+  color: black;
+}
+Body {
+  background-color: black;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div {
+  color: white;
+  font-family: sans-serif;
+  width: 100%;
+}
+.greeting {
+  font-size: 200px;
+  Font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+  margin-top: 100px
+}
+.invitation {
+  margin-top: 80px;
+  margin-bottom: 240px;
+  text-align: right;
+  font-size: 100px;
+  line-height: 60px;
+  font-weight: bold;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
 
-.App-link {
-  color: #61dafb;
+}
+.logistics {
+  text-align: left;
+  padding-bottom: 100px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
 }
 
-@keyframes App-logo-spin {
+.logistics:after {
+  border-bottom: 1px solid white;
+  content: '';
+  display: block;
+  margin-left: 25%;
+  width: 50%;
+  padding-top: 500px;
+}
+.contact{
+  font-size: 80px;
+  line-height: 70px;
+}
+.hotels {
+  font-size: 80px;
+  line-height: 70px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: yellow !important;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+.details {
+  float: left;
+  width: 48%;
+}
+.arrow {
+  color: green;
+  font-size: 150px;
+  padding-top: 20px;
+}
+
+@keyframes slidein {
   from {
-    transform: rotate(0deg);
+    margin-right: 100%;
+    width: 150%;
   }
+
   to {
-    transform: rotate(360deg);
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 2367px){
+  .greeting {
+    font-size: 100px;
+    line-height: 60px;
+    margin-top: 200px
+  }
+  .invitation {
+    margin-top: 80px;
+    margin-bottom: 240px;
+    font-size: 100px;
+    line-height: 60px;
+  }
+  .logistics {
+    padding-bottom: 100px;
+  }
+
+  .logistics:after {
+    padding-top: 800px;
+  }
+  .contact{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .hotels {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .arrow {
+    color: green;
+    font-size: 150px;
+    padding-top: 20px;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-right: 100%;
+      width: 150%;
+    }
+
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1023px){
+  .greeting {
+    font-size: 50px;
+    line-height: 30px;
+    margin-top: 200px
+  }
+  .invitation {
+    margin-top: 30px;
+    margin-bottom: 240px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .logistics {
+    padding-bottom: 20px;
+  }
+
+  .logistics:after {
+    padding-top: 400px;
+  }
+  .contact{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .hotels {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .arrow {
+    font-size: 80px;
+    padding-top: 20px;
+  }
+  a {
+    color: yellow;
+  }
+  a:visited {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-right: 100%;
+      width: 150%;
+    }
+
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
   }
 }
