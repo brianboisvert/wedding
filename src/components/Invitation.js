@@ -16,10 +16,10 @@ class Invitation extends React.Component {
     return (
       <div>
         <div className='invitation'>
-          <div>Brian & Sam, Wedding</div><br />
+          <div>Brian & Sam, The Wedding</div><br />
           <div>November Sixth 2021</div><br />
           <div>The Foundry, New York City</div><br />
-          <div className='invite'>Formal Invitation to Follow</div>
+          <div className='invite'>Invitation to Follow</div>
           <span className='logistics'>
             <span className='hotel'>hotel blocks: </span>
             <a href='https://www.thewilliamvale.com/'>william vale, </a>
